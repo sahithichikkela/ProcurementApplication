@@ -597,7 +597,7 @@ class SiteController extends Controller
 		}',
 		
 		CURLOPT_HTTPHEADER => array(
-			'Authorization: Bearer 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',
+			'Authorization: Bearer 7',
 			'Content-Type: application/json'
 		),
 		));
