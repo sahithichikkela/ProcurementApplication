@@ -1,0 +1,24 @@
+<?php
+
+if ($data->status=="assigned"){ ?>
+
+<button class="btn btn-primary  pull-right ml-5" ><a style="color:white" href="<?php echo $this->createUrl('index.php/ticket/closeticket', array('id' => $data->id)); ?>"> Close Ticket</a></button>
+
+<button class="btn btn-primary pull-right ml-5" ><a style="color:white" href="<?php echo $this->createUrl('index.php/ticket/holdticket', array('id' => $data->id)); ?>"> Hold Ticket</a></button>
+
+<?php
+}
+?>
+
+
+<?php
+
+if ($data->status=="hold"){ ?>
+
+<button class="btn btn-primary  pull-right ml-5" ><a style="color:white" href="<?php echo $this->createUrl('index.php/ticket/closeticket', array('id' => $data->id)); ?>"> Close Ticket</a></button>
+
+<button class="btn btn-primary pull-right ml-5" ><a style="color:white" href="<?php echo $this->createUrl('index.php/ticket/unholdticket', array('id' => $data->id)); ?>"> Unhold Ticket</a></button>
+
+<?php
+}
+?>
